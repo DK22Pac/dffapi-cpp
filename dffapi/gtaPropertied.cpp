@@ -4,10 +4,10 @@
 /***************************************************/
 #include "gtaPropertied.h"
 
-bool gtaPropertied::hasProperty(gtaString const & name) {
-	return mProperties.find(name) != mProperties.end();
+gtaBool gtaPropertied::hasProperty(gtaString const & name) {
+    return mProperties.find(name) != mProperties.end();
 }
 
-void gtaPropertied::clearProperties() {
-	mProperties.clear();
+void gtaPropertied::removeProperties() {
+    mProperties.clear();
 }

@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{A9B7A1CD-2406-4807-910B-9F0BCC5BABAA}</ProjectGuid>
     <RootNamespace>dffapi</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,7 +69,25 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)output\</OutDir>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)output\</OutDir>
+    <TargetName>$(ProjectName)64</TargetName>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)64_d</TargetName>
+    <OutDir>$(SolutionDir)output\</OutDir>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)output\</OutDir>
+    <IntDir>.obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -123,11 +141,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="gtaBox.h" />
+    <ClInclude Include="gtaColor.h" />
+    <ClInclude Include="gtaException.h" />
+    <ClInclude Include="gtaExtendable.h" />
+    <ClInclude Include="gtaFilterMode.h" />
+    <ClInclude Include="gtaLine.h" />
+    <ClInclude Include="gtaMatrix.h" />
+    <ClInclude Include="gtaNode.h" />
+    <ClInclude Include="gtaPixelFormat.h" />
+    <ClInclude Include="gtaQuaternion.h" />
+    <ClInclude Include="gtaSphere.h" />
+    <ClInclude Include="gtaTexCoords.h" />
+    <ClInclude Include="gtaTexture.h" />
+    <ClInclude Include="gtaTextureAddressMode.h" />
+    <ClInclude Include="gtaTextureDesc.h" />
+    <ClInclude Include="gtaTriangle.h" />
+    <ClInclude Include="gtaTxd.h" />
     <ClInclude Include="gtaTypes.h" />
     <ClInclude Include="gtaPropertied.h" />
+    <ClInclude Include="gtaUserExtension.h" />
+    <ClInclude Include="gtaUtils.h" />
+    <ClInclude Include="gtaVector2d.h" />
+    <ClInclude Include="gtaVector3d.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="gtaBox.cpp" />
+    <ClCompile Include="gtaColor.cpp" />
+    <ClCompile Include="gtaException.cpp" />
+    <ClCompile Include="gtaExtendable.cpp" />
+    <ClCompile Include="gtaLine.cpp" />
+    <ClCompile Include="gtaMatrix.cpp" />
+    <ClCompile Include="gtaNode.cpp" />
     <ClCompile Include="gtaPropertied.cpp" />
+    <ClCompile Include="gtaQuaternion.cpp" />
+    <ClCompile Include="gtaSphere.cpp" />
+    <ClCompile Include="gtaTexCoords.cpp" />
+    <ClCompile Include="gtaTexture.cpp" />
+    <ClCompile Include="gtaTriangle.cpp" />
+    <ClCompile Include="gtaTxd.cpp" />
+    <ClCompile Include="gtaUserExtension.cpp" />
+    <ClCompile Include="gtaUtils.cpp" />
+    <ClCompile Include="gtaVector2d.cpp" />
+    <ClCompile Include="gtaVector3d.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

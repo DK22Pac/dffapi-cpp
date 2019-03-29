@@ -1,10 +1,112 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="gtaTypes.h" />
     <ClInclude Include="gtaPropertied.h" />
+    <ClInclude Include="gtaExtendable.h" />
+    <ClInclude Include="gtaTexture.h" />
+    <ClInclude Include="gtaTextureDesc.h" />
+    <ClInclude Include="gtaTxd.h" />
+    <ClInclude Include="gtaUserExtension.h" />
+    <ClInclude Include="gtaColor.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaException.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaUtils.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaMatrix.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaTexCoords.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaSphere.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaQuaternion.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaTriangle.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaTextureAddressMode.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaFilterMode.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaTypes.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaVector3d.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaVector2d.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaPixelFormat.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaLine.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaBox.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="gtaNode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gtaPropertied.cpp" />
+    <ClCompile Include="gtaExtendable.cpp" />
+    <ClCompile Include="gtaTexture.cpp" />
+    <ClCompile Include="gtaTxd.cpp" />
+    <ClCompile Include="gtaUserExtension.cpp" />
+    <ClCompile Include="gtaColor.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaException.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaUtils.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaMatrix.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaTexCoords.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaSphere.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaQuaternion.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaTriangle.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaVector2d.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaVector3d.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaLine.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaBox.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="gtaNode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{c0a07ab3-9c51-45b4-8c2a-9a48533bdb0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{6bd1d04b-7422-4f63-a909-5b034ec06c2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

@@ -1,6 +1,9 @@
 /***************************************************/
 /* dffapi 2.0
 /* https://github.com/DK22Pac/dffapi
+/*
+/* Basic types
+/*
 /***************************************************/
 #pragma once
 
@@ -62,3 +65,5 @@ using gtaPath = std::filesystem::path;
 template<typename FT>
 using gtaFunction = std::function<FT>;
 using gtaAny = std::any;
+template<typename T>
+using gtaSmartPtr = std::unique_ptr<T>;
