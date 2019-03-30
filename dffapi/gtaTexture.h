@@ -24,8 +24,7 @@ private:
     gtaBool mIsCubeTexture = false;
     gtaBool mAutoMipMapsEnabled = false;
     gtaVector<gtaColor> mPalette;
-    gtaUChar *mPixels = nullptr;
-    gtaUInt mPixelsSize = 0;
+    gtaVector<gtaUChar> mPixels;
 public:
     gtaString const &getName();
     void setName(gtaString const &name);
@@ -56,4 +55,9 @@ public:
     gtaBool getAutoMipMapsEnabled();
     void setAutoMipMapsEnabled(gtaBool autoMipMapsEnabled);
     gtaVector<gtaColor> const &getPalette();
+    void setPalette(gtaVector<gtaColor> const &palette);
+    void setPalette(gtaVector<gtaColor> &&palette);
+    gtaVector<gtaUChar> const &getPixels();
+    void setPixels(gtaVector<gtaUChar> const &pixels);
+    void setPixels(gtaVector<gtaUChar> &&pixels);
 };

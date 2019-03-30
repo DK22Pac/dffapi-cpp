@@ -96,6 +96,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -106,6 +107,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -118,6 +120,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -134,6 +137,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -143,8 +147,10 @@
   <ItemGroup>
     <ClInclude Include="gtaBox.h" />
     <ClInclude Include="gtaColor.h" />
+    <ClInclude Include="gtaD3DDeviceAccess.h" />
     <ClInclude Include="gtaException.h" />
     <ClInclude Include="gtaExtendable.h" />
+    <ClInclude Include="gtaFile.h" />
     <ClInclude Include="gtaFilterMode.h" />
     <ClInclude Include="gtaLine.h" />
     <ClInclude Include="gtaMatrix.h" />
@@ -168,8 +174,10 @@
   <ItemGroup>
     <ClCompile Include="gtaBox.cpp" />
     <ClCompile Include="gtaColor.cpp" />
+    <ClCompile Include="gtaD3DDeviceAccess.cpp" />
     <ClCompile Include="gtaException.cpp" />
     <ClCompile Include="gtaExtendable.cpp" />
+    <ClCompile Include="gtaFile.cpp" />
     <ClCompile Include="gtaLine.cpp" />
     <ClCompile Include="gtaMatrix.cpp" />
     <ClCompile Include="gtaNode.cpp" />

@@ -4,9 +4,10 @@
 /***************************************************/
 #pragma once
 #include "gtaPropertied.h"
+#include "gtaExtendable.h"
 #include "gtaMatrix.h"
 
-class gtaNode : public gtaPropertied {
+class gtaNode : public gtaExtendable, public gtaPropertied {
 private:
     gtaString mName;
     gtaMatrix mTransform;

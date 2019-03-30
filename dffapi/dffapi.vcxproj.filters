@@ -56,6 +56,8 @@
       <Filter>core</Filter>
     </ClInclude>
     <ClInclude Include="gtaNode.h" />
+    <ClInclude Include="gtaD3DDeviceAccess.h" />
+    <ClInclude Include="gtaFile.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gtaPropertied.cpp" />
@@ -100,6 +102,8 @@
       <Filter>core</Filter>
     </ClCompile>
     <ClCompile Include="gtaNode.cpp" />
+    <ClCompile Include="gtaD3DDeviceAccess.cpp" />
+    <ClCompile Include="gtaFile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="core">

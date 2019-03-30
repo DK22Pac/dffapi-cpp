@@ -125,3 +125,23 @@ void gtaTexture::setAutoMipMapsEnabled(gtaBool autoMipMapsEnabled) {
 gtaVector<gtaColor> const & gtaTexture::getPalette() {
     return mPalette;
 }
+
+void gtaTexture::setPalette(gtaVector<gtaColor> const & palette) {
+    mPalette = palette;
+}
+
+void gtaTexture::setPalette(gtaVector<gtaColor>&& palette) {
+    mPalette = std::move(palette);
+}
+
+gtaVector<gtaUChar> const & gtaTexture::getPixels() {
+    return mPixels;
+}
+
+void gtaTexture::setPixels(gtaVector<gtaUChar> const & pixels) {
+    mPixels = pixels;
+}
+
+void gtaTexture::setPixels(gtaVector<gtaUChar>&& pixels) {
+    mPixels = std::move(pixels);
+}
